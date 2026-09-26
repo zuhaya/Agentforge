@@ -1,0 +1,14 @@
+{
+  "name": "@agentforge/mcp-web-search",
+  "version": "0.1.0",
+  "description": "MCP server exposing a web_search tool, backed by the Tavily Search API",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "zod": "^3.23.8"
+  }
+}

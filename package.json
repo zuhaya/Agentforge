@@ -1,0 +1,15 @@
+{
+  "name": "agentforge",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Multi-agent AI system that connects to real tools via MCP (Model Context Protocol)",
+  "workspaces": [
+    "apps/*",
+    "mcp-servers/*"
+  ],
+  "scripts": {
+    "dev:orchestrator": "npm run dev --workspace=apps/orchestrator",
+    "dev:web": "npm run dev --workspace=apps/web"
+  },
+  "license": "MIT"
+}
