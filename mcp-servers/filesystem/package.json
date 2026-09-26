@@ -1,0 +1,14 @@
+{
+  "name": "@agentforge/mcp-filesystem",
+  "version": "0.1.0",
+  "description": "MCP server exposing versioned draft read/write/list tools, backed by local files",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "zod": "^3.23.8"
+  }
+}

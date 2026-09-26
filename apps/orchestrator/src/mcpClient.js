@@ -17,13 +17,17 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(__dirname, "../../../");
 
 /** Register additional MCP servers here as you build them. */
+/** Register additional MCP servers here as you build them. */
 const MCP_SERVERS = {
   "web-search": {
     command: "node",
     args: [path.join(REPO_ROOT, "mcp-servers/web-search/src/index.js")],
   },
-  // "filesystem": { command: "node", args: [...] },
-  // "memory":     { command: "node", args: [...] },
+  filesystem: {
+    command: "node",
+    args: [path.join(REPO_ROOT, "mcp-servers/filesystem/src/index.js")],
+  },
+  // "memory": { command: "node", args: [...] },
 };
 
 const connections = new Map();
